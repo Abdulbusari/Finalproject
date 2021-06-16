@@ -1,0 +1,163 @@
+/*use this tutorial to do this https://www.youtube.com/watch?v=5RoXCs54CN8 */
+/*makes the margin and padding 0 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* make all the text this font*/
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* make the nav go all the way across the screen, and a position of abosolute */
+.banner-text {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  /* make the hieght 50px and on the right*/
+  /* make it inline-block and padding of 40px and 15px and make the text all uppercase and make the text white
+	and make the size of the text 20px */
+  /* makes the mouse a pointer*/
+  /* makes the h2 paragraphs centered and white with a size of 50px and top margin of 20% */
+}
+
+.banner-text ul {
+  height: 50px;
+  float: right;
+}
+
+.banner-text ul li {
+  display: inline-block;
+  padding: 40px 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+}
+
+.banner-text ul li:hover {
+  cursor: pointer;
+}
+
+.banner-text h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  margin-top: 20%;
+}
+
+/* gives it a background of these colour and width 100% and height of 100vh */
+.animation-area {
+  background: -webkit-gradient(linear, right top, left top, from(#f28f3b), to(#c8553d));
+  background: linear-gradient(to left, #f28f3b, #c8553d);
+  width: 100%;
+  height: 100vh;
+}
+
+/* gives it a position of absolute, top and left of 0, width and height of 100% and hide the overflow */
+.box-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* gives it position of absolute, no list styling, width and height of 25px, this background colour, 
+	this animation and bottom of -150px*/
+  /* makes it go to the left by 86% and width and height of 80px and no animation-delay*/
+  /* makes it go to the left by 12% and width and height of 30px and animation-delay of 1.5secs and make it last 10secs*/
+  /* makes it go to the left by 70% and width and height of 100px and animation-delay of 5.5secs */
+  /* makes it go to the left by 42% and width and height of 150px and animation-delay of 0 secs and make it last 15secs*/
+  /* makes it go to the left by 65% and width and height of 40px and animation-delay of 0*/
+  /* makes it go to the left by 15% and width and height of 110px and animation-delay of 3.5secs*/
+}
+
+.box-area li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: #ffd5c2;
+  -webkit-animation: animate 20s linear infinite;
+  animation: animate 20s linear infinite;
+  bottom: -150px;
+}
+
+.box-area li:nth-child(1) {
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.box-area li:nth-child(2) {
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+}
+
+.box-area li:nth-child(3) {
+  left: 70%;
+  width: 100px;
+  height: 100px;
+  -webkit-animation-delay: 5.5s;
+  animation-delay: 5.5s;
+}
+
+.box-area li:nth-child(4) {
+  left: 42%;
+  width: 150px;
+  height: 150px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+}
+
+.box-area li:nth-child(5) {
+  left: 65%;
+  width: 40px;
+  height: 40px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.box-area li:nth-child(6) {
+  left: 15%;
+  width: 110px;
+  height: 110px;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+
+/* controls the animatation at the start*/
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-800px) rotate(360deg);
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes animate {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-800px) rotate(360deg);
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,113 @@
+<!--
+the tutorial I used https://www.youtube.com/watch?v=ps0-JAQENXI
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+                 
+    </style>
+  </head>
+  <body>
+    <!-- makes the nav bar-->
+    <header>
+      <nav>
+        <ul>
+            <a href="index.html" >
+                
+              <li >Home</li>
+            
+            </a>
+            <a href="Gallery.html">
+                
+              <li >Gallery</li>
+            
+            </a>
+            <a href="Staff.html">
+                
+              <li>Staff</li>
+            
+            </a>
+            <a href="contact.html" id="active">
+                
+              <li >Contact us</li>
+            
+            </a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- makes the box for you to write your name -->
+      <div class="contact-banner">
+        <p class="contact-description">
+          We'd really love to hear from you! Please fill in the form below or contact us directly!
+        </p>
+      </div> 
+      <div id = "gallery">
+        <a id= "pic1">
+        <form name="contact-form">
+        <div class="form-control">
+        <label>Full Name</label>
+        <input name="name"
+          placeholder="First and Last Name" />
+        <div class="error hide">Name is required</div>
+      </div>
+
+      <!-- makes a box to put you email in-->
+      <div class="form-control" >
+        <label>Email</label>
+        <input
+          name="email"
+          placeholder="e.g. your_email@example.com"/>
+        <div class="error hide">Email is invalid</div>
+      </div>
+
+      <!-- makes a box to put you number in-->
+      <div class="form-control">
+        <label>Phone</label>
+        <input name="phone"
+          placeholder="2040000000"
+        ></input>
+        <div class="error hide">Phone is invalid</div>
+      </div>
+
+      <!-- makes a box to leave a message in -->
+      <div class="form-control">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <div class="error hide">Message is required</div>
+      </div>
+
+      <hr/>
+      <button type="submit">SUBMIT FORM</button>
+      </form>
+      </a>
+
+      <!-- makes the div with our info-->
+      <div class="myDiv"> 
+        <h1> Reach Us  </h1>
+        <p class="" style="margin-left: -10px; margin-bottom: 80px;">
+          Email: Adorable4family@gmail.com<br>
+        </p>
+        <p class="c" style="margin-bottom: 80px;">
+          Phone: +1 204-881-4249<br>
+        </p>
+        <p class="c" style="margin-bottom: 80px;">
+          Address: 11 Manipogo Bay<br>
+        </p>
+      </div>
+    
+      <script src="js/main.js"></script>
+    </main>
+  </body>
+</html>

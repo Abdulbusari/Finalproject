@@ -1,0 +1,159 @@
+/*
+tutorial followed https://www.youtube.com/watch?v=ps0-JAQENXI
+*/
+
+/* imports the code from main-style.css */
+@import url("main-style.css");
+
+/* gives everything in the webpage have the same font and makes the text black with no margins */
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  color: black;
+  margin: 0;
+}
+
+/* makes the poster at the top of the page fade between these two colours and makes the text white and makes
+the banner span across the full screen, and gives it a padding of 40px. */
+.contact-banner {
+  background-image: white;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  padding: 20px;
+}
+
+/* If you dont put the proper information the box the outline of the box turns red*/
+.invalid {
+  border: 1px solid red;
+}
+
+/* gives everything with the id .mb-2 a bottom margin of 20px */
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+/* gives everything with id of .mb-4 a bottom margin of 40px*/
+.mb-4 {
+  margin-bottom: 40px;
+}
+
+/* gives everything with the id of .contact-description a bottom margin of 40px and top margin of 100px*/
+.contact-description {
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+
+/* lets you type inside the boxes and gives it a padding of 10, border of 5, width of 280px, makes the border
+that specific colour, makes the size of the text 18px, gives it no outline and makes the text black*/
+input {
+  padding: 10px;
+  border-radius: 5px;
+  width: 280px;
+  border: 1px solid #f28f3b;
+  font-size: 18px;
+  outline: none;
+  color: rgb(0, 0, 0);
+}
+
+/* gives it a padding of 40px*/
+form {
+  padding: 40px;
+}
+
+/* gives the text a size of 20px and basically positions it in a specfic spot so the margins for left and right
+are 40px, bottom margin is 10px and top margin is 20px */
+.form-control {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  
+}
+
+/* if there is an error make the text red and size of 14 and bottom margin of 10px*/
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* makes the text 20px and bottom margin of 10px*/
+label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* does not show the object that uses the id*/
+.hide {
+  opacity: 0;
+}
+
+
+/* gives it a width of 560px, border of 5px, no outline, padding of 10px, hieght of 200px and text size of 18px*/
+textarea {
+  width: 560px;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  height: 200px;
+  font-size: 18px;
+}
+
+/* makes a button with black text, padding of 20px, a black border, border size of 10px, no background, makes the
+mouse a pointer finger, and make the transition half a second long */
+button {
+  color: black;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  color: black;
+
+/* when you hover over the button change to this colour and text white*/
+  :hover {
+    background-image: linear-gradient(
+      to right,
+      rgb(37, 37, 37) 0%,
+      rgb(29, 29, 29) 100%
+    );
+    color: white;
+  }
+  
+}
+
+/* gives it a bottom and top margin of 20px, hieght of 1px, no border and this colour*/
+hr {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 1px;
+  border: none;
+  background-color:  #588b8b;
+}
+
+/* makes the paragraph text 20px and spaces it out */
+p {
+  font-size: 20px;
+  .c {
+    word-break: break-word;
+    padding-bottom: 30px;
+  }
+}
+
+
+
+/* gives it a border of 5px with that colour, makes the background white, makes all the text in the middle of the div,
+hieght of 700px and width of 400px and padding of 50px, left and right margin of 40px and top margin of 50px */
+.myDiv {
+  border: 5px outset  #ffd5c2;
+  background-color: rgb(255, 255, 255);    
+  text-align: center;
+  width: 400px;
+  height: 700px;
+  padding: 50px;
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+}

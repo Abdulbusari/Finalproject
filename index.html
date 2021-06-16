@@ -1,0 +1,212 @@
+<!--
+Name: Abdul
+Course: Software Development 20S
+Teacher: Mr. Hardman
+School: Pembina Trails Early College
+Date Last Modified: June 05 2021
+-->
+
+<!-- EVERY WEBSITE I USED FOR ANY OF THE PAGES OR CODE IS CITED HERE
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_layout_named
+https://coolors.co/588b8b-ffffff-ffd5c2-f28f3b-c8553d - colour scheme
+http://www.corelangs.com/css/box/center-div.html
+https://www.w3schools.com/css/tryit.asp?filename=trycss_align_container
+https://www.toptal.com/designers/htmlarrows/arrows/ - the bullet points
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_container
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_video
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_about_page
+https://github.com/mrhardman23 
+https://lokeshdhakar.com/projects/lightbox2/ 
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Art</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+        <link rel="stylesheet" href="style/main-style.css">
+        
+        <style>
+             /* intenal styling */
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: .5%;
+                width: 50%;
+                height: 50%;
+                margin-top: 3%;
+            }
+            .myDiv2 {
+                display: block;
+                border: 5px outset rgb(139, 139, 139);
+                background-color: rgb(255, 255, 255);    
+                text-align: center;
+                width: 400px;
+                padding: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20%;
+   
+            }
+            .myDiv3 {
+                display: block;
+                border: 5px outset rgb(139, 139, 139);
+                background-color: rgb(255, 255, 255);    
+                text-align: center;
+                width: 400px;
+                padding: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 24%;
+   
+            }
+        </style>
+
+    </head> 
+    <body>
+        <header>
+            <!-- makes the nav bar -->
+            <nav>
+                <ul>
+                    <a href="index.html" id="active" >
+                        
+                        <li >Home</li>
+                    
+                    </a>
+                    <a href="Gallery.html">
+                        
+                        <li >Gallery</li>
+                    
+                    </a>
+                    <a href="Staff.html">
+                        
+                        <li>Staff</li>
+                    
+                    </a>
+                    <a href="contact.html">
+                        
+                        <li >Contact us</li>
+                    
+                    </a>
+                </ul>
+            </nav>
+        </header>
+      
+        <main>
+        
+            <!-- makes the picture in the middle of the page -->
+            <img src="images/poster.jpg" alt="Play, learn and grow together poster" class="center"> 
+            <div class="myDiv" style="width: 100%; display: inline-block; margin-left: 0%;">
+                <!-- makes the box that stretchs across the screen with this message -->
+                <h1>Adorable child care</h1>
+                <p>
+                    <span>&#10147;</span> A licensed family Child Care that offers a play-based
+                    learning of experiences for young children in a safe and nuturing enviroment. <br>
+                    <span>&#10147;</span> Passionate about working in partnership with families in creating a conducive
+                    learning enviroment.<br> 
+                    <span>&#10147;</span> Proficient in helping children attain their physical, cognitive, social and emotional
+                    development by getting them ready for the present and the future.<br>
+                </p>
+            </div>
+            <!-- makes the box with this message -->
+            <div class="myDiv">
+              <h1> What we offer!! </h1>
+              <p>
+                    At Adorable Child Care it is about creating an optimal
+                    environment where children can develop intellectually,
+                    socially, physically and emotionally; uniquely prepared 
+                    environment incorporating holistic learning tailored to
+                    individual child developmental needs and interest based
+                    on their sensitive periods.
+              </p>
+            </div>
+    
+            <!-- makes the first card in the row-->
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img src="images/baby.jpg" alt="3 babies in Daycare" style="width:100%">
+                        <div class="container">
+                            <h2 style="text-align: center;">Preschool</h2>
+                            <p class="title">18 months - 4 years</p>
+                            <p>
+                                Our preschool program is designed to allow children to study alongside them. 
+                                We utilise the children's interests as indications for programming directions 
+                                and expand on their curiosity. This curriculum is fully unstructured, allowing 
+                                children to learn and grow at their own speed without fear of being judged.   
+                            </p>
+                      
+                        </div>
+                    </div>
+                </div>
+                <!-- makes the second card in the row -->
+                <div class="column">
+                    <div class="card">
+                        <img src="images/Nursery.jpg" alt="kids in Nursery School" style="width:100%">
+                        <div class="container">
+                            <h2 style="text-align: center;">Nursery School</h2>
+                            <p class="title">4 years</p>
+                            <p>
+                                Our redesigned nursery education program aids in the development of children's 
+                                school ready skills. Pre-literacy skills, building self-reliance and independence, 
+                                and socialising via play are all topics we focus on. To better prepare them for a 
+                                successful introduction into the school system, we urge youngsters to begin developing 
+                                problem-solving and critical thinking skills.   
+                            </p>
+                      
+                        </div>
+                    </div>
+                </div>>
+                
+                <!-- makes the third card in the row-->
+                <div class="column">
+                    <div class="card">
+                        <img src="images/school.jpg" alt="4 kids standing with thier school supplies" style="width:100%">
+                        <div class="container">
+                            <h2 style="text-align: center;">School Age</h2>
+                            <p class="title">5 years - 12 years</p>
+                            <p>
+                                Our school-aged curriculum is meant to give kids an open-ended area 
+                                to explore the new and exciting ideas and concepts they're learning about 
+                                every day. We use group projects and clubs to focus on greater long-term 
+                                learning objectives here. We plan a variety of activities during the summer 
+                                and during school breaks, ranging from field trips to art and craft classes.   
+                            </p>
+                      
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--make the box with this message -->
+            <div class= "myDiv">
+                <h2>
+                    Picture and video of the daycare
+                </h2>
+            </div>
+
+            <!-- makes the box and puts the picture in the middle -->
+            <div id = "gallery">
+                <a id= "pic1">
+                    <div class="myDiv2">
+                        <img src="images/daycare.jpeg" alt="picture of daycare " class="center" style="width: 100%;"> 
+                    </div>
+                </a>
+                
+                <!-- makes the box and puts the video inside -->
+                <div class="myDiv3">
+                    <a id= "pic2">
+                        <video width = "300"controls>
+                            <source src="images/daycarevid.mp4" type="video/mp4">
+                            Your browser does not support HTML video.
+                        </video>
+                        <P> </P> 
+                    </a>
+                </div>
+            </div>
+        </main>
+
+    </body>
+</html>
